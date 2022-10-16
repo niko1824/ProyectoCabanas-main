@@ -4,7 +4,7 @@ function detalleCabana(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Cabin/all",
+        url:"http://130.61.215.83/api/Cabin/all",
         type: "GET",
         contentType: "application/JSON",
         dataType: "JSON",
@@ -63,7 +63,7 @@ function registroCab(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://130.162.34.139/api/Cabin/save",
+        url: "http://130.61.215.83/api/Cabin/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -101,7 +101,7 @@ function actualizarCab(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Cabin/update",
+        url:"http://130.61.215.83/api/Cabin/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -134,7 +134,7 @@ function borrarCab(idCliente){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Cabin/{id}",
+        url:"http://130.61.215.83/api/Cabin/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -153,7 +153,7 @@ function detalleClientes(){
 
     $.ajax({
 
-        url:"https://g9a57240d8d860f-r2oj2f73pu6lrxwm.adb.eu-frankfurt-1.oraclecloudapps.com/ords/admin/client/client",
+        url:"https://130.61.215.83/api/Client/all,
         type: "GET",
         dataType :"JSON",
         success :function(respuestaCli){
@@ -209,7 +209,7 @@ function registroCli(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Client/save",
+        url:"http://130.61.215.83/api/Client/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -243,7 +243,7 @@ function actualizarCli(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Client/update",
+        url:"http://130.61.215.83/api/Client/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -274,7 +274,7 @@ function borrarCli(idCliente){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"https://g9a57240d8d860f-r2oj2f73pu6lrxwm.adb.eu-frankfurt-1.oraclecloudapps.com/ords/admin/client/client",
+        url:"https://130.61.215.83/apli/Client/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -293,7 +293,7 @@ function detalleMensaje(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Message/all",
+        url:"http://130.61.215.83/api/Message/all",
         type: "GET",
         dataType :"JSON",
         success: function(respuestaMen){
@@ -344,7 +344,7 @@ function registroMen(){
          let dataToSend = JSON.stringify(myData);
          $.ajax({
 
-             url:"http://130.162.34.139/api/Message/save",
+             url:"http://130.61.215.83/api/Message/save",
              type: "POST",
              data: myData,
              contentType: "application/JSON",
@@ -373,7 +373,7 @@ function borrarMen(idMen){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Message/{id}",
+        url:"http://130.61.215.83/api/Message/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -400,7 +400,7 @@ function actualizarMen(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Message/update",
+        url:"http://130.61.215.83/api/Message/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -425,7 +425,7 @@ function detalleCategoria(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Category/all",
+        url:"http://130.61.215.83/api/Category/all",
         type: "GET",
         contentType: "application/JSON",
         dataType: "JSON",
@@ -477,7 +477,7 @@ function registroCat(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://130.162.34.139/api/Category/save",
+        url: "http://130.61.215.83/api/Category/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -509,7 +509,7 @@ function actualizarCat(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Category/update",
+        url:"http://130.61.215.83/api/Category/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -539,7 +539,7 @@ function borrarCat(idCliente){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Category/{id",
+        url:"http://130.61.215.83/api/Category/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -558,7 +558,7 @@ function detalleReservas(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Reservation/all",
+        url:"http://130.61.215.83/api/Reservation/all",
         type: "GET",
         contentType: "application/JSON",
         dataType: "JSON",
@@ -617,7 +617,7 @@ function registroRes(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://130.162.34.139/api/Reservation/save",
+        url: "http://130.61.215.83/api/Reservation/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -653,7 +653,7 @@ function actualizarRes(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Reservation/update",
+        url:"http://130.61.215.83/api/Reservation/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -685,7 +685,7 @@ function borrarRes(idCliente){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Reservation/{id}",
+        url:"http://130.61.215.83/api/Reservation/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -704,7 +704,7 @@ function detalleCalificacion(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Score/all",
+        url:"http://130.61.215.83/api/Score/all",
         type: "GET",
         dataType: "JSON",
         success: function(respuestaCalRes){
@@ -758,7 +758,7 @@ function registroCal(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://130.162.34.139/api/Score/save",
+        url: "http://130.61.215.83/api/Score/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -792,7 +792,7 @@ function actualizarCalRes(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Score/update",
+        url:"http://130.61.215.83/api/Score/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -818,7 +818,7 @@ function detalleAdmUs(){
 
     $.ajax({
 
-        url:"http://130.162.34.139/api/Admin/al",
+        url:"http://130.61.215.83/api/Admin/all",
         type: "GET",
         contentType: "application/JSON",
         dataType: "JSON",
@@ -873,7 +873,7 @@ function registroAdmUs(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url: "http://130.162.34.139/api/Admin/save",
+        url: "http://130.61.215.83/api/Admin/save",
         type: "POST",
         data: myData,
         contentType: "application/JSON",
@@ -906,7 +906,7 @@ function actualizarAdmUs(){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Admin/update",
+        url:"http://130.61.215.83/api/Admin/update",
         type: "PUT",
         data: dataToSend,
         contentType:"application/JSON",
@@ -936,7 +936,7 @@ function borrarAdmUs(idCliente){
     let dataToSend = JSON.stringify(myData);
     $.ajax({
 
-        url:"http://130.162.34.139/api/Admin/{id}",
+        url:"http://130.61.215.83/api/Admin/{id}",
         type : "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
